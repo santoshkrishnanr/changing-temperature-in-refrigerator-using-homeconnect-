@@ -1,6 +1,7 @@
 from homeconnect import HomeConnect
 import webbrowser
 import time
+import keyboard
 
 client_id = "2xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 client_secret = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
@@ -24,9 +25,6 @@ print(hc.get_token(auth_result))
 # list the existing appliances
 appliances = hc.get_appliances()
 print(appliances)
-
-
-import keyboard
 
 tem = 4
 frez = -24
